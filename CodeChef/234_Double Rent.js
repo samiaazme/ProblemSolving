@@ -1,6 +1,6 @@
 function solve(input)
 {
-   let [X] = input.split(); 
+   let X = Number(input.split()); 
    let newRent = 2 * X;
    console.log(newRent);
 }
