@@ -1,11 +1,11 @@
 function solve(input)
 {
-   let [X] = input.split().map(Number); 
+   let [X] = input.split(); 
    let newRent = 2 * X;
    console.log(newRent);
 }
 
-// Boilerplate for JS
+// Boilerplate (DO NOT TOUCH)
 process.stdin.resume();
 process.stdin.setEncoding('utf-8');
 
