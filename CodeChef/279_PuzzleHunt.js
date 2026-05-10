@@ -25,5 +25,5 @@ process.stdin.on('data', function (chunk) {
 });
 
 process.stdin.on('end', function () {
-    solve(inputString);
+    eligible(inputString);
 });
