@@ -3,7 +3,7 @@ function solve(listen)
     let hear = listen.trim().split("\n");
     let T = Number(hear[0]);
     for(let i = 1; i <= T; i++){
-        let [X] = hear[i].split(" ").map(Number);
+        let X = hear[i].split(" ").map(Number);
         
         if(X >= 67 && X <= 45000)
         {
