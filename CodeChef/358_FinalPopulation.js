@@ -12,18 +12,12 @@ function solve(input)
 }
 
 // Boilerplate for JS
-process.stdin.resume();
-process.stdin.setEncoding('utf-8');
 
-let inputString = '';
+const fs = require("fs");
 
-process.stdin.on('data', function (chunk) {
-    inputString += chunk;
-});
+const input = fs.readFileSync(0, "utf8");
 
-process.stdin.on('end', function () {
-    solve(inputString);
-});
+solve(input);
 
 
 
