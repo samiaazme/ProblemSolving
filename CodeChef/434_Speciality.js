@@ -1,19 +1,21 @@
 function solve(input)
 {
-    let mask = input.trim().split("\n")
-    let T = Number(mask[0])
+    let speciality = input.trim().split("\n")
+    let T = Number(speciality[0])
     for(let i = 1; i <= T; i++)
     {
-        let [X, Y] = mask[i].split(" ").map(Number)
-        let a  = X*100
-        let b = Y*10
-        if(a < b)
+        let [X, Y, Z] = speciality[i].split(" ").map(Number)
+        if(X > Y && X > Z)
         {
-           console.log("Disposable") 
+           console.log("Setter") 
+        }
+        else if(Y > X && Y > Z)
+        {
+            console.log("Tester")
         }
         else
         {
-            console.log("Cloth")
+            console.log("Editorialist")
         }
     }
     
@@ -25,3 +27,4 @@ const fs = require("fs");
 const input = fs.readFileSync(0, "utf8");
 
 solve(input);
+
