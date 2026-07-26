@@ -23,3 +23,5 @@ let arr2 = pocket(25, 35)
 
 // }
 console.log(arr2)
+
+Math.sqrt
