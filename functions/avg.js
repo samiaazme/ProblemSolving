@@ -1,19 +1,23 @@
 // Input = nums, sum, avg, i, n
-// for(i =0; i <n ; i++)
+// for(i = 1; i <= n.length - 1; i++)
 // {
-//     sum = sum+nums[i]
+//     nums = n[i]
+//     sum = sum+nums
 // }
-// avg = sum / n
+// avg = sum / n.length
 // Print avg
 function solve (input)
 {
-    let n = input.trim().split(" ")
-    let nums, sum = 0
-    for(let i = 1; i <= n; i++)
+    let n = input.trim().split(" ").map(Number)
+    // console.log(n)
+    let nums
+    let sum = 0
+    for(let i = 0; i <= n.length - 1; i++)
     {
-       sum = Number(sum + nums[i])
+        nums = n[i]
+        sum = sum + nums
     }
-    let avg = sum / n
+    let avg = sum / n.length
     console.log(avg)
 }
 
