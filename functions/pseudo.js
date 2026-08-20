@@ -1,21 +1,21 @@
 // Input n, sum = 0
-// for loop (i = 1; i <= n; i++)
+// for loop (i = 0; i < n..length; i++)
 // {
-//     if (i%2==0)
+//     if (n[i]%2==0)
 //         { 
 //             sum = sum + i
 //         }
 // Print sum 
 
-function solve (input)
+function solve (input)//'2 5 4 8 9'
 {
-    let n = Number(input.trim());
+    let n = input.trim().split(" ").map(Number);
     let sum = 0;
-    for(let i = 1; i <= n; i++)
+    for(let i = 0; i < n.length ; i++)
     {
-        if(i % 2 == 0)
+        if(n[i] % 2 == 0)
         {
-            sum = sum + i;
+            sum = sum + n[i];
         }
     }
     console.log(sum);
@@ -26,4 +26,4 @@ const fs = require("fs");
 
 const input = fs.readFileSync(0, "utf8");
 
-solve(input);
+solve(input);//'2 5 4 8 9'

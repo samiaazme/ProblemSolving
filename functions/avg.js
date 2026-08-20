@@ -10,12 +10,12 @@ function solve (input)
 {
     let n = input.trim().split(" ").map(Number)
     // console.log(n)
-    let nums
+    // let nums
     let sum = 0
     for(let i = 0; i <= n.length - 1; i++)
     {
-        nums = n[i]
-        sum = sum + nums
+        // nums = n[i]
+        sum = sum + n[i]
     }
     let avg = sum / n.length
     console.log(avg)
